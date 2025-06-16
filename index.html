@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Document</title>
+    <style>
+        body{
+            height:100vh;
+            width:100vw;
+            background-color: rgb(37, 227, 227);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .hero{
+            height:80vh;
+            width:80vw;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .play{
+            height:80%;
+            width:95%;
+            background: linear-gradient(to right, RGB(200, 35, 50), RGB(4, 121, 161));
+            border-radius: 8rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .cont1{
+            height:100%;
+            width:20%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: column;
+        }
+        .screen{
+            height:85%;
+            width:60%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+            border: 8px solid black;
+        }
+        .s1,.s2{
+            height:100%;
+            width:50%;
+            background-color: green;
+            transition: all 2s ease-in-out;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+        }
+        .screen:hover .s1{
+            transform: translateX(-100%);
+        }
+        .screen:hover .s2{
+            transform: translateX(100%);
+        }
+        .cont2{
+            height:100%;
+            width:20%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: column;
+        }
+        .minus,.plus{
+            height:10%;
+            width:25%;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .controls,.controls1{
+            height:35%;
+            width:75%;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .dec{
+            height: 5%;
+            width:10%;
+            border-radius: 50%;
+            border: 5px solid black;
+        }
+        .s1 img, .s2 img {
+            height: 100%;
+            width: 200%;
+            object-fit: cover;
+            object-position: center;
+            position: absolute;
+        }
+        .s1 img {
+            left: 0;
+            top: 0;
+            clip-path: polygon(0% 0%, 50% 0%, 50% 100%, 0% 100%);
+        }
+        .s2 img {
+            right: 0;
+            top: 0;
+            clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 100%);
+        }
+        i{
+            font-size: 2.5em;
+        }
+        .btn1,.btn2{
+            height:100%;
+            width:30%;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+        }
+        .top1,.top2,.down1,.down2{
+            height:35%;
+            width:100%;
+            background-color: black;
+            clip-path: polygon(0% 0%,100% 0%,100% 75%,50% 100%,0% 75%);
+            position: relative;
+        }
+        .btn2{
+            transform: rotate(90deg);
+        } 
+        .top2{
+            transform: rotate(180deg);
+        }
+        .down2{
+            transform: rotate(180deg);
+        }
+        .cir{
+            height:33%;
+            width:100%;
+            border-radius: 50%;
+            background-color: black;
+        }
+        .profile{
+            width:100%;
+            height:100%;
+            background-color: aliceblue;
+            z-index: -100;
+        }
+        .screen2{
+            height: 100%;
+            width:100%;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            overflow-y:auto;
+            scrollbar-width: none;
+        }
+        .screen3{
+            height:100%;
+            width:100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+        }
+        .id{
+            height:100%;
+            width: 100%;
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .graph{
+            height:100%;
+            width: 100%;
+            background-color: black;
+        }
+        .one1{
+            position: absolute;
+            height: 50%;
+            width:25%;
+            background-color: rgba(157, 153, 153, 0.6);
+            backdrop-filter: blur(10px);
+            top:10%;
+            left:2%;
+            clip-path: polygon(0% 5%,5% 0%,10% 0%,15% 5%,75% 5%,80% 0%,100% 0%,100% 100%,5% 100%,0% 90%,0% 75%,5% 65%,5% 30%,0% 25%);
+        }
+        .one2{
+            height:80%;
+            width:13%;
+            background-color: rgba(157, 153, 153, 0.6);
+            backdrop-filter: blur(10px);
+            position: absolute;
+            top:10%;
+            left:28%;
+            clip-path: polygon(15% 0%,75% 0%,100% 10%,100% 90%,80% 100%,30% 100%,0% 90%,0% 75%,30% 60%,30% 30%,15% 25%);
+        }
+        .one3{
+            height:25%;
+            width:30%;
+            background-color: rgba(157, 153, 153, 0.6);
+            backdrop-filter: blur(10px);
+            position: absolute;
+            bottom:10%;
+            left:2%;
+            clip-path: polygon(5% 15%,50% 15%,60% 0%,80% 0%,85% 15%,85% 69%,98% 100%,75% 100%,65% 80%,25% 80%,20% 100%,5% 100%,0% 90%,0% 20%);
+
+        }
+        .one4{
+            height:60%;
+            width:30%;
+            background-color: navy;
+            z-index: 0;
+            position: absolute;
+            top:16%;
+            left:6%;
+            border-top-left-radius: 15%;
+        }
+        .heros{
+            height: 100%;
+            width:100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* flex-direction: column; */
+        }
+        .about{
+            height:auto;
+            width:100%;
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="play">
+            <div class="cont1"><div class="minus"><i class="bx bx-minus"></i></div>
+            <div class="controls"><div class="btn1">
+                <div class="top1"></div>
+            <div class="top2"></div></div>
+            <div class="btn2">
+                <div class="down1"></div><div class="down2"></div>
+            </div></div>
+            <div class="dec"></div></div>
+            <div class="screen"><div class="screen2"><div class="heros"><div class="id">
+            <div class="one1"></div>
+            <div class="one4"></div>
+            <div class="one2"></div>
+            <div class="one3"></div></div>
+            <div class="graph"><canvas id="myRadarChart" width="375" height="400"></canvas></div></div><div class="about"></div></div>
+            <div class="screen3"><div class="s1"><img src="img/gate1.jpg" alt="img"></div><div class="s2"><img src="img/gate1.jpg" alt="img"></div></div></div>
+            <div class="cont2"><div class="plus"><i class="bx bx-plus"></i></div><div class="controls1"><div class="btn1"><div class="cir"></div>
+            <div class="cir"></div></div><div class="btn2"><div class="cir"></div>
+            <div class="cir"></div></div></div><div class="dec"></div></div>
+        </div>
+    </div>
+<script>
+const ctx = document.getElementById('myRadarChart').getContext('2d');
+
+const myRadarChart = new Chart(ctx, {
+  type: 'radar',
+  data: {
+    labels: ['HTML', 'CSS', 'JavaScript', 'React', 'Node.js', 'MongoDB'],
+    datasets: [{
+      data: [90, 80, 85, 75, 70, 60],
+      fill: true,
+      backgroundColor: 'rgba(0, 191, 255, 0.2)',
+      borderColor: 'rgba(0, 191, 255, 1)',
+      pointBackgroundColor: 'rgba(0, 191, 255, 1)',
+      pointBorderColor: '#fff',
+      pointHoverBackgroundColor: '#fff',
+      pointHoverBorderColor: 'rgba(255, 76, 76, 1)'
+    }]
+  },
+  options: {
+    responsive: true,
+    scales: {
+      r: {
+        angleLines: { display: true },
+        suggestedMin: 0,
+        suggestedMax: 100,
+        ticks: {
+          display: false
+        },
+        pointLabels: {
+          color: '#fff',
+          font: {
+            size: 14
+          }
+        },
+        grid: {
+          color: 'rgba(255,255,255,0.2)'
+        }
+      }
+    },
+    plugins: {
+      legend: {
+        display: false
+      },
+      tooltip: {
+        callbacks: {
+          label: function(context) {
+            return context.formattedValue + '%';  // ✅ Shows just the value with a %
+          }
+        }
+      }
+    }
+  }
+});
+</script>
+
+</body>
+</html>
