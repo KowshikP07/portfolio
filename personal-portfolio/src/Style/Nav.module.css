@@ -4,11 +4,12 @@ nav {
     top: 0%;
     background-color: rgb(255, 255, 255);
     width: 100%;
-    border-bottom: 5px solid black;
+    border-bottom: 7px solid black;
     /* bor */
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 1;
 }
 
 .logo {
@@ -38,7 +39,7 @@ ul li {
     list-style: none;
     /* font-size: 30px; */
     font-size: clamp(18px,30px,4vw);
-    font-weight: 800;
+    font-weight: 100;
     word-spacing: 5px;
     height: 100%;
     display: flex;
