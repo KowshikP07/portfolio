@@ -29,7 +29,10 @@
     justify-content: space-between;
 }
 .aboutsec{
-    background-color: red;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .para{
     height: 33%;
@@ -53,7 +56,7 @@
     justify-content: center;
     /* background-color: black; */
     color: black;
-    font-size: clamp(1rem,3.5rem,6vw);
+    font-size: clamp(1.5rem,4.5rem,3.5vw);
     text-transform: uppercase;
     font-family: anton,sans-serif;
     letter-spacing: 0.8px;
@@ -179,4 +182,53 @@
 }
 .heromain:hover .light1::after,.heromain:hover .light1::before,.heromain:hover .light4::after,.heromain:hover .light4::before{
   filter: grayscale(0%);
+}
+.heromain:hover{
+    cursor: pointer;
+}
+.aboutpage{
+    height: 550px;
+    width: 60%;
+    border: 1px solid black;
+    position: relative;
+    top:15px;
+}
+.mainabout{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.aboutpagetitle{
+    height: 125px;
+    width: 100%;
+    overflow: hidden;
+}
+.aboutpagetitle .aboutme p{
+    font-size: clamp(50px,120px,8vw);
+    color: black;
+    text-transform: uppercase;
+    font-family: anton,sans-serif;
+}
+.aboutme{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+#uniqueaboutme{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 2px;
+}
+.aboutline{
+    height: 9px;
+    width: 750px;
+    background-color: black;
+    position: relative;
+    top:8px;
 }
