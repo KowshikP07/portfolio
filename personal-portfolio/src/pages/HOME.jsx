@@ -5,27 +5,53 @@ import heroVector from '../assets/herovector.svg';
 const HOME = () => {
   return (
     <>
-    <Navbar/>
-    <section className={home.homesec}>
-      <div className={home.heromain}>
-        <div className={home.light1}></div>
-      <div className={home.light1}></div>
-      <div className={home.hero}>
-        <p className={home.para}>HELLO</p>
-        <p className={home.para}>I'M</p>
-        <p className={home.para}>KOWSHIK P</p>
-      </div>
-       <div className={home.light1}></div>
-      <div className={home.light4}></div>
-      </div>
-      <div className={home.herodev}><p className={home.front}>frontend developer</p><div className={home.image}><img alt="image1" src={heroVector}/></div></div>
-    </section>
-    <section className={home.aboutsec}>
-      <div className={home.mainabout}>
-        <div className={home.aboutpagetitle}><div className={home.aboutme}><p>about me</p><p id={home.uniqueaboutme}>about me</p><p>about me</p></div><div className={home.aboutme} aria-hidden="true"><p>about me</p><p id={home.uniqueaboutme}>about me</p><p>about me</p></div></div><div className={home.aboutline}></div>
-        <div className={home.aboutpage}></div>
-      </div>
-    </section>
+      <Navbar />
+      <section className={home.homesec}>
+        <div className={home.heromain}>
+          <div className={home.light1}></div>
+          <div className={home.light1}></div>
+          <div className={home.hero}>
+            <p className={home.para}>HELLO</p>
+            <p className={home.para}>I'M</p>
+            <p className={home.para}>KOWSHIK P</p>
+          </div>
+          <div className={home.light1}></div>
+          <div className={home.light4}></div>
+        </div>
+        <div className={home.herodev}><p className={home.front}>frontend developer</p><div className={home.image}><img alt="image1" src={heroVector} /></div></div>
+      </section>
+      <section className={home.aboutsec}>
+        <div className={home.mainabout}>
+          <div className={home.aboutpagetitle}>
+            <div className={home.track}>
+              <div className={home.aboutme}>
+                <p>about me</p>
+                <p id={home.uniqueaboutme}>about me</p>
+                <p>about me</p>
+                <p id={home.uniqueaboutme}>about me</p>
+              </div>
+              <div className={home.aboutme}>
+                <p>about me</p>
+                <p id={home.uniqueaboutme}>about me</p>
+                <p>about me</p>
+                <p id={home.uniqueaboutme}>about me</p>
+              </div>
+            </div>
+          </div>
+          <div className={home.aboutline}></div>
+          <div className={home.aboutpage}>
+            <div className={home.aboutpagehero}>
+              <div className={home.aboutmebav}>
+              <span className={home.navbarlogo}>ABOUT me</span>
+              <ul className={home.aboutmenavlink}>
+              <li className={home.aboutnavli}>who i am</li>
+              <li className={home.aboutnavli}>who i was</li>
+              <li className={home.aboutnavli}>faq</li></ul>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   )
 }

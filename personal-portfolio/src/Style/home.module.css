@@ -187,11 +187,18 @@
     cursor: pointer;
 }
 .aboutpage{
-    height: 550px;
-    width: 60%;
-    border: 1px solid black;
+    height: 750px;
+    width: 75%;
     position: relative;
     top:15px;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.aboutpage:hover{
+    border: 5px solid black;
+    box-shadow: 5px 10px 50px rgb(0,0,0);
 }
 .mainabout{
     height: 100%;
@@ -201,24 +208,38 @@
     justify-content: center;
     flex-direction: column;
 }
-.aboutpagetitle{
-    height: 125px;
-    width: 100%;
-    overflow: hidden;
+.aboutpagetitle {
+  overflow: hidden;
+  width: 100%;
 }
+
+.track {
+  display: flex;
+  width: max-content;
+  animation: scroll 15s linear infinite;
+}
+
+.aboutme {
+  display: flex;
+  gap: 2rem;
+  white-space: nowrap;
+  padding-right: 2rem;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
 .aboutpagetitle .aboutme p{
     font-size: clamp(50px,120px,8vw);
     color: black;
     text-transform: uppercase;
     font-family: anton,sans-serif;
-}
-.aboutme{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    overflow: hidden;
 }
 #uniqueaboutme{
     -webkit-text-fill-color: transparent;
@@ -230,5 +251,48 @@
     width: 750px;
     background-color: black;
     position: relative;
-    top:8px;
+    top:-5px;
+}
+.aboutpagehero{
+    height: 90%;
+    width: 90%;
+    /* border: 1px solid black; */
+    background-color: RGB(254, 251, 236);
+    overflow-y: auto;
+}
+.aboutmebav{
+    height: 125px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: RGB(181, 221, 194);
+}
+.navbarlogo{
+    text-transform: uppercase;
+    padding: 5px;
+    height: 100%;
+    width: 20%;
+    background-color: RGB(181, 221, 194);
+    color: black;
+    font-size: clamp(8px,35px,6vw);
+    font-weight: 800;
+    font-family: anton,sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.aboutmenavlink{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.aboutnavli{
+    text-transform: uppercase;
+    list-style: none;
+    font-weight: 500;
+    padding: 5px;
+    font-size: 25px;
 }
