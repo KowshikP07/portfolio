@@ -48,6 +48,9 @@ const HOME = () => {
               <li className={home.aboutnavli}>who i was</li>
               <li className={home.aboutnavli}>faq</li></ul>
             </div>
+            <div className={home.aboutmename}></div>
+            <div className={home.aboutmephoto}></div>
+            <div className={home.aboutmecontent}></div>
             </div>
           </div>
         </div>
