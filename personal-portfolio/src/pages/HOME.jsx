@@ -48,9 +48,19 @@ const HOME = () => {
               <li className={home.aboutnavli}>who i was</li>
               <li className={home.aboutnavli}>faq</li></ul>
             </div>
-            <div className={home.aboutmename}></div>
-            <div className={home.aboutmephoto}></div>
+            <section className={home.sectionhome}>
+            <div className={home.aboutmename}><h1 className={home.aboutmenameyear}>KOWSHIK'05</h1></div>
+            <div className={home.sectionhomeabout}>
+              <div className={home.aboutmephoto}></div>
             <div className={home.aboutmecontent}></div>
+            </div>
+            </section>
+            <section className={home.aboutwhoiam}>
+              <div className={home.aboutwhoiaminfinitescroll}><h1 className={home.aboutmenameyearbottom}>KOWSHIK'05</h1></div>
+              <div className={home.aboutwhoiamcontent}>
+                <div className={home.aboutwhoiamwords}></div>
+              </div>
+            </section>
             </div>
           </div>
         </div>
