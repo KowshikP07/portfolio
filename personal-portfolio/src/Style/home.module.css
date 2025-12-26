@@ -256,7 +256,6 @@
 .aboutpagehero{
     height: 90%;
     width: 90%;
-    /* border: 1px solid black; */
     background-color: RGB(254, 251, 236);
     overflow-y: auto;
 }
@@ -294,8 +293,7 @@
     list-style: none;
     font-weight: 500;
     padding: 5px;
-    font-size: 25px;
-    /* background-color: aqua; */
+    font-size: clamp(8px,22px,2vw);
     position: relative;
 }
 .aboutnavli::after{
@@ -323,7 +321,6 @@
     border-top: 2px solid black;
 }
 .aboutmephoto{
-    /* height: 300px; */
     height: 100%;
     width: 100%;
     display: flex;
@@ -337,9 +334,7 @@
     background-color: aqua;
 }
 .sectionhome{
-    /* min-height: auto; */
     width: 100%;
-    /* border: 1px solid black; */
 }
 .sectionhomeabout{
     display: grid;
@@ -357,20 +352,30 @@
 }
 .aboutwhoiaminfinitescroll{
     position: absolute;
-    /* top: 50%; */
     height: 250px;
     width: 100%;
     background-color: antiquewhite;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    overflow: hidden;
+    background-color: RGB(181, 221, 194);
+}
+.scrolling{
+    height: 100%;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    animation: scrollname 25s linear infinite;
+    position: absolute;
+    gap: 35px;
 }
 .aboutwhoiamcontent{
     position: absolute;
     top: 0%;
     height: 100%;
     width: 100%;
-    /* background-color: aqua; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -378,8 +383,14 @@
 .aboutwhoiamwords{
     height: 100%;
     width: 80%;
-    background-color: rgba(165, 42, 42,0.4);
+    background-color: rgba(255, 251, 229, 0.8);
     border-radius: 25px;
+    transition: all 1s;
+    border: 2px solid black;
+}
+.aboutwhoiamwords:hover{
+    background-color: RGBA(242, 198, 171,0.8);
+    backdrop-filter: blur(5px);
 }
 .aboutmenameyear,.aboutmenameyearbottom{
     font-size: clamp(50px,125px,10vw);
@@ -393,23 +404,17 @@
     justify-content: center;
     position: relative;
 }
-.aboutmenameyearbottom::before{
-    position: absolute;
-    content: "";
-    height: 50%;
+.aboutmetriangle{
+    height: 125px;
     width: 125px;
     background-color: black;
-    top:25%;
-    left: 5%;
     transform: rotate(45deg);
 }
-.aboutmenameyearbottom::after{
-    position: absolute;
-    content: "";
-    height: 50%;
-    width: 125px;
-    background-color: black;
-    top:25%;
-    right: 5%;
-    transform: rotate(45deg);
+@keyframes scrollname{
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
