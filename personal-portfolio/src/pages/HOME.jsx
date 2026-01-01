@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '../Component/Navbar'
 import home from '../Style/home.module.css'
 import heroVector from '../assets/herovector.svg';
+import FAQ from '../Component/FAQ';
 const HOME = () => {
   return (
     <>
@@ -61,6 +62,13 @@ const HOME = () => {
                 <div className={home.aboutwhoiamcontent}>
                   <div className={home.aboutwhoiamwords}></div>
                 </div>
+              </section>
+              <section className={home.whoiwassec}>
+                <div className={home.whoiamtitle}><h1 className={home.whoiamtitleh1}>who i was</h1></div>
+                <div className={home.whoiamabout}></div>
+              </section>
+              <section className={home.faq}>
+                <FAQ/>
               </section>
             </div>
           </div>
