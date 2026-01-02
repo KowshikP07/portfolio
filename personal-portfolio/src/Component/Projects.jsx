@@ -5,7 +5,12 @@ const Projects = () => {
   return (
     <div className={project.main}>
         <h1 className={project.title}>PROJECTS</h1>
-        <div className={project.toshow}></div>
+        <div className={project.toshow}>
+            <div className={project.projectdisplay}><div className={project.projectimage}></div><div className={project.projectdesc}></div></div>
+            <div className={project.projectdisplay}><div className={project.projectimage}></div><div className={project.projectdesc}></div></div>
+            <div className={project.projectdisplay}><div className={project.projectimage}></div><div className={project.projectdesc}></div></div>
+            <div className={project.projectdisplay}><div className={project.projectimage}></div><div className={project.projectdesc}></div></div>
+        </div>
     </div>
   )
 }
