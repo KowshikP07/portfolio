@@ -40,7 +40,7 @@ export default function FAQ() {
       <h2 className="faq-title">FAQ</h2>
 
       <div className="faq-container">
-        {faqData.map((item, index) => (
+        {faqData.map((item, index) => {return (
           <div className="faq-item" key={index}>
             <button
               className={`faq-question ${
@@ -60,7 +60,7 @@ export default function FAQ() {
               </div>
             )}
           </div>
-        ))}
+        )})}
       </div>
     </section>
   );

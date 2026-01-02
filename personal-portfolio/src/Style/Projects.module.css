@@ -1,0 +1,30 @@
+.main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.title{
+    font-family: anton,sans serif;
+    font-size: clamp(75px,125px,10vw);
+    font-weight: 800;
+    color: black;
+    text-align: center;
+    letter-spacing: 1px;
+    position: relative;
+}
+.title::after{
+    position: absolute;
+    content: "";
+    bottom:0%;
+    left: -30%;
+    height: 9px;
+    width: 50vw;
+    background-color: black;
+}
+.toshow{
+    min-height: 80vh;
+    width: 100%;
+}

@@ -3,6 +3,7 @@ import Navbar from '../Component/Navbar'
 import home from '../Style/home.module.css'
 import heroVector from '../assets/herovector.svg';
 import FAQ from '../Component/FAQ';
+import Projects from '../Component/Projects';
 const HOME = () => {
   return (
     <>
@@ -58,7 +59,7 @@ const HOME = () => {
               </section>
               <section className={home.aboutwhoiam}>
                 <div className={home.aboutwhoiaminfinitescroll}><div className={home.scrolling}><div className={home.aboutmetriangle}></div><h1 className={home.aboutmenameyearbottom}>KOWSHIK'05</h1><div className={home.aboutmetriangle}></div><h1 className={home.aboutmenameyearbottom}>KOWSHIK'05</h1><div className={home.aboutmetriangle}></div></div>
-                <div className={home.scrolling} aria-hidden="true"><div className={home.aboutmetriangle}></div><h1 className={home.aboutmenameyearbottom}>KOWSHIK'05</h1><div className={home.aboutmetriangle}></div><h1 className={home.aboutmenameyearbottom}>KOWSHIK'05</h1><div className={home.aboutmetriangle}></div></div></div>
+                  <div className={home.scrolling} aria-hidden="true"><div className={home.aboutmetriangle}></div><h1 className={home.aboutmenameyearbottom}>KOWSHIK'05</h1><div className={home.aboutmetriangle}></div><h1 className={home.aboutmenameyearbottom}>KOWSHIK'05</h1><div className={home.aboutmetriangle}></div></div></div>
                 <div className={home.aboutwhoiamcontent}>
                   <div className={home.aboutwhoiamwords}></div>
                 </div>
@@ -68,11 +69,14 @@ const HOME = () => {
                 <div className={home.whoiamabout}></div>
               </section>
               <section className={home.faq}>
-                <FAQ/>
+                <FAQ />
               </section>
             </div>
           </div>
         </div>
+      </section>
+      <section className={home.projects}>
+        <Projects />
       </section>
     </>
   )
