@@ -4,6 +4,7 @@ import home from '../Style/home.module.css'
 import heroVector from '../assets/herovector.svg';
 import FAQ from '../Component/FAQ';
 import Projects from '../Component/Projects';
+import Skills from '../Component/Skills';
 const HOME = () => {
   return (
     <>
@@ -77,6 +78,9 @@ const HOME = () => {
       </section>
       <section className={home.projects}>
         <Projects />
+      </section>
+      <section className={home.skillsiknow}>
+        <Skills/>
       </section>
     </>
   )
