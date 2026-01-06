@@ -5,7 +5,15 @@ const Skills = () => {
     <>
     <div className={skill.hero}>
         <div className={skill.title}><h1>Skills</h1></div>
-        <div className={skill.container}></div>
+        <div className={skill.container}>
+        <div className={skill.skillcontainer}></div>
+        <div className={skill.skillcontainer}></div>
+        <div className={skill.skillcontainer}></div>
+        <div className={skill.skillcontainer}></div>
+        <div className={skill.skillcontainer}></div>
+        <div className={skill.skillcontainer}></div>
+        <div className={skill.skillcontainer}></div>
+        <div className={skill.skillcontainer}></div></div>
     </div>
     </>
   )
