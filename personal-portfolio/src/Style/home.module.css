@@ -56,7 +56,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background-color: black; */
     color: black;
     font-size: clamp(1.5rem, 4.5rem, 3.5vw);
     text-transform: uppercase;
@@ -67,7 +66,6 @@
 .image {
     height: 100%;
     width: 10%;
-    /* background-color: black; */
 }
 
 .image img {
@@ -112,7 +110,6 @@
     z-index: -1;
     top: 85%;
     left: -35%;
-    /* clip-path: polygon(0% 30%,50% 75%,65% 60%,100% 95%,65% 60%,50% 75%,0% 30%); */
     clip-path: polygon(0% 60%, 47% 20%, 52% 35%, 100% 5%, 45% 75%, 40% 60%, 15% 100%);
     transform: rotate(8deg);
     filter: grayscale(100%);
@@ -141,7 +138,6 @@
     z-index: -1;
     top: 85%;
     left: 100%;
-    /* clip-path: polygon(0% 30%,50% 75%,65% 60%,100% 95%,65% 60%,50% 75%,0% 30%); */
     clip-path: polygon(0% 65%, 43% 22%, 48% 38%, 100% 0%, 40% 85%, 36% 70%, 18% 100%);
     transform: rotate(-120deg);
     filter: grayscale(100%);
@@ -170,7 +166,6 @@
     z-index: -1;
     top: 5%;
     left: 100%;
-    /* clip-path: polygon(0% 30%,50% 75%,65% 60%,100% 95%,65% 60%,50% 75%,0% 30%); */
     clip-path: polygon(0% 58%, 45% 20%, 50% 35%, 100% 7%, 45% 75%, 40% 60%, 18% 100%);
     transform: rotate(-173deg);
     filter: grayscale(100%);
