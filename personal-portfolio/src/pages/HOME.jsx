@@ -6,6 +6,7 @@ import FAQ from '../Component/FAQ';
 import Projects from '../Component/Projects';
 import Skills from '../Component/Skills';
 import About from '../Component/About';
+import Contact from '../Component/Contact';
 const HOME = () => {
   return (
     <>
@@ -25,13 +26,18 @@ const HOME = () => {
         <div className={home.herodev}><p className={home.front}>frontend developer</p><div className={home.image}><img alt="image1" src={heroVector} /></div></div>
       </section>
       <section className={home.aboutsec}>
-        <About/>
+        <About />
       </section>
       <section className={home.projects}>
         <Projects />
       </section>
       <section className={home.skillsiknow}>
-        <Skills/>
+        <Skills />
+      </section>
+      <section className={home.contactsec}>
+        <div>
+        <Contact/>
+      </div>
       </section>
     </>
   )
