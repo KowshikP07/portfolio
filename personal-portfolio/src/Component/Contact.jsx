@@ -5,10 +5,18 @@ const Contact = () => {
     <>
     <div className={con.main}>
         <div className={con.image}>
-            <div className={con.personalimage}></div>
-            <div className={con.personalimage}></div>
-            <div className={con.personalimage}></div>
-            <div className={con.personalimage}></div>
+            <div className={con.personalimage}>
+              <div className={con.photo}></div>
+            </div>
+            <div className={con.personalimage}>
+              <div className={con.photo}></div>
+            </div>
+            <div className={con.personalimage}>
+              <div className={con.photo}></div>
+            </div>
+            <div className={con.personalimage}>
+              <div className={con.photo}></div>
+            </div>
         </div>
         <div className={con.contact}></div>
     </div>

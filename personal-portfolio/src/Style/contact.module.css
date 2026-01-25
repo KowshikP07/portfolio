@@ -8,7 +8,6 @@
     flex-direction: column;
 }
 .image{
-    border: 2px solid wheat;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -25,31 +24,41 @@
 }
 .personalimage{
     height: 90%;
-    /* padding:3px; */
-    background-color: red;
+    /* padding:px; */
+    background-color: RGB(39, 165, 239);
+    filter: grayscale(100%);
     position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.personalimage:hover{
+    filter: grayscale(0%);
 }
 .personalimage:nth-child(1){
-    left:3%;
+    left:2%;
     width: 25%;
     border: 5px solid black;
     top:25%;
     transform: rotate(-10deg);
+    transition: all 1s;
 }
 .personalimage:nth-child(2){
-    left:34%;
+    left:33%;
     width: 25%;
     height: 75%;
     border: 5px solid black;
     top:25%;
     transform: translate(-20%, 5%);
+    transition: all 1s;
 }
 .personalimage:nth-child(3){
-    left:55%;
+    left:54%;
     width: 25%;
     border: 5px solid black;
     top:33%;
     transform: rotate(15deg);
+    transition: all 1s;
 }
 .personalimage:nth-child(4){
     right:-5%;
@@ -57,4 +66,46 @@
     border: 5px solid black;
     top:20%;
     transform: rotate(-5deg);
+    transition: all 1s;
+}
+.personalimage:nth-child(1) .photo{
+    width: 90%;
+    height: 90%;
+    background-color: white;
+
+}
+.personalimage:nth-child(2) .photo{
+    width: 90%;
+    height: 90%;
+    background-color: white;
+}
+.personalimage:nth-child(3) .photo{
+    width: 90%;
+    height: 90%;
+    background-color: white;
+}
+.personalimage:nth-child(4) .photo{
+    width: 90%;
+    height: 90%;
+    background-color: white;
+}
+.personalimage:nth-child(1):hover{
+    top:5%;
+    left:2%;
+    transform: rotate(0deg);
+}
+.personalimage:nth-child(2):hover{
+    left:33%;
+    top:5%;
+    transform: translate(-20%, 5%);
+}
+.personalimage:nth-child(3):hover{
+    left:54%;
+    top:5%;
+    transform: rotate(0deg);
+}
+.personalimage:nth-child(4):hover{
+    right:1%;
+    top:5%;
+    transform: rotate(0deg);
 }
