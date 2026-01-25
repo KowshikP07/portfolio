@@ -19,7 +19,7 @@
 }
 .contact{
     background-color: green;
-    height: 70vh;
+    height: 90vh;
     width: 100%;
 }
 .personalimage{
@@ -108,4 +108,89 @@
     right:1%;
     top:5%;
     transform: rotate(0deg);
+}
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.personldetails{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.links{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+.details{
+    height: 45%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border-bottom: 3px solid white;
+}
+.logoimage{
+    width: 100%;
+    height: 70%;
+    background-color: black;
+}
+.logoimage img{
+    height: 100%;
+    width: 80%;
+}
+.ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 50%;
+}
+.li{
+    width: 100%;
+    margin-left: 10%;
+    font-size: clamp(15px,25px,10vw);
+    font-weight: 500;
+    color: white;
+    font-family: anton,sans serif;
+    letter-spacing: 1px;
+}
+.span{
+    height: 75px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.span span{
+    margin-left: 3%;
+    font-size: clamp(10px,20px,10vw);
+    font-weight: 700;
+    color: white;
+}
+.mainlink{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: column;
+    font-size: clamp(15px,25px,10vw);
+    font-family: anton,sans serif;
+    color: white;
+    margin-right: 2%;
 }

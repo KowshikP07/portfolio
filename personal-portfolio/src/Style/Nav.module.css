@@ -17,6 +17,10 @@ nav {
     width: 155px;
     background-color: black;
 }
+.logo img{
+    height: 100%;
+    width: 100%;
+}
 
 .navlink {
     height: 100%;
