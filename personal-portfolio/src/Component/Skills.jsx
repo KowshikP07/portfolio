@@ -1,6 +1,9 @@
 import React, { useState } from 'react'
 import skill from '../Style/Skill.module.css'
 import achieve from '../assets/achievements.mp4'
+import ach1 from '../assets/ach1.jpg'
+import ach2 from '../assets/ach2.jpg'
+import ach3 from '../assets/ach3.jpg'
 const Skills = () => {
   const [index, setIndex] = useState(0);
   const rightclick = () => {
@@ -40,9 +43,9 @@ const Skills = () => {
             <div className={skill.track} style={{
               transform: `translateX(-${index * 100}%)`
             }}>
-              <div className={skill.slide}></div>
-              <div className={skill.slide}></div>
-              <div className={skill.slide}></div>
+              <div className={skill.slide}><img src={ach1} alt="Achievement 1" /></div>
+              <div className={skill.slide}><img src={ach2} alt="Achievement 2" /></div>
+              <div className={skill.slide}><img src={ach3} alt="Achievement 3" /></div>
             </div>
           </div>
           <button onClick={leftclick}></button>

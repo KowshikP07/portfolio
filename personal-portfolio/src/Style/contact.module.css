@@ -194,3 +194,12 @@
     color: white;
     margin-right: 2%;
 }
+.photo img{
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    filter: grayscale(100%);
+}
+.personalimage:hover .photo img{
+    filter: grayscale(0%);
+}

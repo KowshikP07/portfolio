@@ -1,19 +1,21 @@
 import React from 'react'
 import con from '../Style/contact.module.css'
 import logo from '../assets/logo.png'
+import selfpor from '../assets/selfportrait1.jpg'
+import selfpor3 from '../assets/selfportrait3.png'
 const Contact = () => {
   return (
     <>
     <div className={con.main}>
         <div className={con.image}>
             <div className={con.personalimage}>
-              <div className={con.photo}></div>
+              <div className={con.photo}><img src={selfpor} alt="Self Portrait" /></div>
             </div>
             <div className={con.personalimage}>
               <div className={con.photo}></div>
             </div>
             <div className={con.personalimage}>
-              <div className={con.photo}></div>
+              <div className={con.photo}><img src={selfpor3} alt="Self Portrait" /></div>
             </div>
             <div className={con.personalimage}>
               <div className={con.photo}></div>
