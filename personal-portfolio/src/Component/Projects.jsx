@@ -6,7 +6,9 @@ import skill from '../assets/skillcave.png'
 const Projects = () => {
     const [projectdone,setprojectdone]=useState([{"id":1,"title":"Notes Application","image":dark},{"id":2,"title":"Notes Application","image":skill},{"id":3,"title":"Notes Application","image":dark},{"id":4,"title":"Notes Application","image":skill}]);
     const projectcompleted=projectdone.map((projects,index)=>(
-      <div className={project.projectdisplay} key={index}><div className={project.projectimage}><img src={projects.image} alt={projects.title}></img></div><div className={project.projectdesc}><h3>{projects.title}</h3> <div className={project.qrouter}><img src={qr} alt="qr"/></div></div></div>
+      <div className={project.projectdisplay} key={index}>
+        <div className={project.projectimage}><img src={projects.image} alt={projects.title}></img></div><div className={project.projectdesc}><h3>{projects.title}</h3><div className={project.qrouter}><img src={qr} alt="qr"/></div><button className={project.probtn}>click me!</button></div>
+      </div>
     ))
   return (
     <div className={project.main}>

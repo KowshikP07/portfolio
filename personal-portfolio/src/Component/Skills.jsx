@@ -4,6 +4,10 @@ import achieve from '../assets/achievements.mp4'
 import ach1 from '../assets/ach1.jpg'
 import ach2 from '../assets/ach2.jpg'
 import ach3 from '../assets/ach3.jpg'
+import html from '../assets/htmllogo.png'
+import css from '../assets/csslogo.png'
+import js from '../assets/jslogo.png'
+import react from '../assets/reactlogo.png'
 const Skills = () => {
   const [index, setIndex] = useState(0);
   const rightclick = () => {
@@ -20,10 +24,10 @@ const Skills = () => {
       <div className={skill.hero}>
         <div className={skill.title}><h1>Skills</h1></div>
         <div className={skill.container}>
-          <div className={skill.skillcontainer}></div>
-          <div className={skill.skillcontainer}></div>
-          <div className={skill.skillcontainer}></div>
-          <div className={skill.skillcontainer}></div>
+          <div className={skill.skillcontainer}><img src={html} alt="HTML Logo" /></div>
+          <div className={skill.skillcontainer}><img src={css} alt="CSS Logo" /></div>
+          <div className={skill.skillcontainer}><img src={js} alt="JavaScript Logo" /></div>
+          <div className={skill.skillcontainer}><img src={react} alt="React Logo" /></div>
           <div className={skill.skillcontainer}></div>
           <div className={skill.skillcontainer}></div>
           <div className={skill.skillcontainer}></div>
@@ -38,7 +42,7 @@ const Skills = () => {
           <div className={skill.certiTitle}><p>ACHIEVEMENTS</p><p>ACHIEVEMENTS</p></div>
         </div>
         <div className={skill.carousel}>
-          <button onClick={rightclick}></button>
+          <button className={skill.button} onClick={rightclick}></button>
           <div className={skill.carouselcont}>
             <div className={skill.track} style={{
               transform: `translateX(-${index * 100}%)`
@@ -48,7 +52,7 @@ const Skills = () => {
               <div className={skill.slide}><img src={ach3} alt="Achievement 3" /></div>
             </div>
           </div>
-          <button onClick={leftclick}></button>
+          <button className={skill.button} onClick={leftclick}></button>
         </div>
       </div>
     </div>

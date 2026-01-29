@@ -24,7 +24,6 @@
 }
 .personalimage{
     height: 90%;
-    /* padding:px; */
     background-color: RGB(39, 165, 239);
     filter: grayscale(100%);
     position: absolute;

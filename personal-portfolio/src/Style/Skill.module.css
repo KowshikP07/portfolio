@@ -121,7 +121,7 @@
     flex-direction: column;
 }
 
-button {
+.button {
     height: 100px;
     border-radius: 50%;
     width: 100px;
@@ -172,4 +172,20 @@ button {
 .carousel:hover img {
     filter: grayscale(0%);
     cursor: pointer;
+}
+.skillcontainer{
+    position: relative;
+}
+.skillcontainer img{
+    position: absolute;
+    top:0%;
+    left: 0%;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    filter: grayscale(100%);
+    transition: all 0.5s;
+}
+.skillcontainer:hover img{
+    filter: grayscale(0%);
 }

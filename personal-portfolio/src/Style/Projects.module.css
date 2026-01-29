@@ -70,7 +70,7 @@
 }
 .projectdesc .qrouter img{
     height: 100%;
-    width: 80%;
+    width: 100%;
 }
 .projectdisplay:hover .projectdesc{
     transform:rotate(5deg);
@@ -114,4 +114,19 @@
     to{
         top:95%;
     }
+}
+.probtn{
+    height: 11%;
+    width: 50%;
+    border-radius: 0%;
+    background-color: white;
+    font-family: anton,sans serif;
+    font-size: 18px;
+    text-transform: capitalize;
+    box-shadow: 5px 5px 1px black;
+    transition: all 0.5s;
+}
+.probtn:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 1px black;
 }
