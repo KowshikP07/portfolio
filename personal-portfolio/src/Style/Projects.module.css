@@ -116,8 +116,8 @@
     }
 }
 .probtn{
-    height: 11%;
-    width: 50%;
+    height: 100%;
+    width: 100%;
     border-radius: 0%;
     background-color: white;
     font-family: anton,sans serif;
@@ -125,8 +125,15 @@
     text-transform: capitalize;
     box-shadow: 5px 5px 1px black;
     transition: all 0.5s;
+    padding-left: 2.5px;
+    padding-right: 2.5px;
 }
 .probtn:hover{
     cursor: pointer;
     box-shadow: 2px 2px 1px black;
+}
+.projectslinks{
+    height: 11%;
+    width: 100%;
+    text-decoration: none;
 }

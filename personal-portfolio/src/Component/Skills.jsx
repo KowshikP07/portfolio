@@ -19,19 +19,20 @@ const Skills = () => {
     setIndex(prev => (prev + 1)%3);
     console.log(`left : ${index}`);
   }
+  const [skillimage,setskillimage]=useState([{"img":html},
+    {"img":css},
+    {"img":js},
+    {"img":react}])
+  const skillarray=skillimage.map((skillsimg,index)=> {
+    return (<div className={skill.skillcontainer} key={index}>
+      <img src={skillsimg.img} alt="Skill Logo" />
+      </div>)
+  })
   return (
     <div className={skill.main}>
       <div className={skill.hero}>
         <div className={skill.title}><h1>Skills</h1></div>
-        <div className={skill.container}>
-          <div className={skill.skillcontainer}><img src={html} alt="HTML Logo" /></div>
-          <div className={skill.skillcontainer}><img src={css} alt="CSS Logo" /></div>
-          <div className={skill.skillcontainer}><img src={js} alt="JavaScript Logo" /></div>
-          <div className={skill.skillcontainer}><img src={react} alt="React Logo" /></div>
-          <div className={skill.skillcontainer}></div>
-          <div className={skill.skillcontainer}></div>
-          <div className={skill.skillcontainer}></div>
-          <div className={skill.skillcontainer}></div></div>
+        <div className={skill.container}>{skillarray}</div>
       </div>
       <div className={skill.certificate}>
         <video autoPlay muted loop playsInline className={skill.vid}><source src={achieve} type="video/mp4" /></video>

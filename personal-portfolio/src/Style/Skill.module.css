@@ -3,7 +3,7 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-direction: column;
 }
 
@@ -13,6 +13,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    top:-25px;
 }
 
 .title h1 {
@@ -175,14 +177,15 @@
 }
 .skillcontainer{
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .skillcontainer img{
     position: absolute;
-    top:0%;
-    left: 0%;
     background-size: cover;
-    height: 100%;
-    width: 100%;
+    height: 75%;
+    width: 80%;
     filter: grayscale(100%);
     transition: all 0.5s;
 }
