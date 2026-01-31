@@ -8,6 +8,8 @@ import html from '../assets/htmllogo.png'
 import css from '../assets/csslogo.png'
 import js from '../assets/jslogo.png'
 import react from '../assets/reactlogo.png'
+import spiral from '../assets/vector2.svg'
+import triangle from '../assets/triangle.svg'
 const Skills = () => {
   const [index, setIndex] = useState(0);
   const rightclick = () => {
@@ -31,6 +33,9 @@ const Skills = () => {
   return (
     <div className={skill.main}>
       <div className={skill.hero}>
+        <div className={skill.background}>
+          <img src={spiral} alt="spiral background" className={skill.spiral}/>
+        </div>
         <div className={skill.title}><h1>Skills</h1></div>
         <div className={skill.container}>{skillarray}</div>
       </div>
