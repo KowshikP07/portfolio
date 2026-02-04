@@ -9,7 +9,10 @@ import css from '../assets/csslogo.png'
 import js from '../assets/jslogo.png'
 import react from '../assets/reactlogo.png'
 import spiral from '../assets/vector2.svg'
-import triangle from '../assets/triangle.svg'
+import triangle from '../assets/blakTriangle.png'
+import dragon from '../assets/dragon.png'
+import panda from '../assets/panda.png'
+import luffy from '../assets/luffy.png'
 const Skills = () => {
   const [index, setIndex] = useState(0);
   const rightclick = () => {
@@ -34,6 +37,11 @@ const Skills = () => {
     <div className={skill.main}>
       <div className={skill.hero}>
         <div className={skill.background}>
+          <div className={skill.triangle}><img src={triangle} alt="Triangle background" />
+          <div className={skill.cartoon} id='dragon'><img src={dragon} alt="dragon made css"/></div>
+          <div className={skill.cartoon} id='panda'><img src={panda} alt="panda made css"/></div>
+          <div className={skill.cartoon} id='onepience'><img src={luffy} alt="luffy made css"/></div>
+          </div>
           <img src={spiral} alt="spiral background" className={skill.spiral}/>
         </div>
         <div className={skill.title}><h1>Skills</h1></div>

@@ -5,7 +5,6 @@
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
-    /* border: 1px solid black; */
     position: relative;
 }
 .background{
@@ -15,15 +14,16 @@
     width: 100%;
     height: 100%;
     z-index: -1;
-    /* background-color: wheat; */
     overflow: hidden;
     border-top: 5px dashed rgba(0,0,0,0.5);
 }
 .spiral{
     position: absolute;
-    right: -8%;
+    right: -10%;
     top:-11%;
     filter: grayscale(100%);
+    height: 50%;
+    width: 30%;
 }
 .title {
     height: 20%;
@@ -209,4 +209,53 @@
 }
 .skillcontainer:hover img{
     filter: grayscale(0%);
+}
+.triangle{
+    height: 250px;
+    position: relative;
+    width: 275px;
+    top:8%;
+    left:2%;
+}
+.triangle img{
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /* filter: grayscale(100%); */
+    transform: rotate(-25deg);
+}
+.cartoon{
+    position: absolute;
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    background-color: black;
+    top:5%;
+    left:23%;
+    border: 2px solid black;
+}
+.cartoon:nth-child(2){
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    /* background-color: green; */
+    top:82%;
+    left: 17%;
+}
+.cartoon:nth-child(3){
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    /* background-color: green; */
+    top:48%;
+    left:85%;
+}
+.cartoon img{
+    position: absolute;
+    border-radius:50% ;
+    background-size: cover;
+    padding: 2px;
+    height: 100%;
+    width: 100%;
 }
