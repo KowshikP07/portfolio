@@ -13,6 +13,8 @@ import triangle from '../assets/blakTriangle.png'
 import dragon from '../assets/dragon.png'
 import panda from '../assets/panda.png'
 import luffy from '../assets/luffy.png'
+import { MdKeyboardDoubleArrowLeft } from "react-icons/md";
+import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
 const Skills = () => {
   const [index, setIndex] = useState(0);
   const rightclick = () => {
@@ -56,7 +58,7 @@ const Skills = () => {
           <div className={skill.certiTitle}><p>ACHIEVEMENTS</p><p>ACHIEVEMENTS</p></div>
         </div>
         <div className={skill.carousel}>
-          <button className={skill.button} onClick={rightclick}></button>
+          <button className={skill.button} onClick={rightclick}><MdKeyboardDoubleArrowLeft size={40}/></button>
           <div className={skill.carouselcont}>
             <div className={skill.track} style={{
               transform: `translateX(-${index * 100}%)`
@@ -66,7 +68,7 @@ const Skills = () => {
               <div className={skill.slide}><img src={ach3} alt="Achievement 3" /></div>
             </div>
           </div>
-          <button className={skill.button} onClick={leftclick}></button>
+          <button className={skill.button} onClick={leftclick}><MdOutlineKeyboardDoubleArrowRight size={40}/></button>
         </div>
       </div>
     </div>
