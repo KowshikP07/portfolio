@@ -11,7 +11,7 @@ const HOME = () => {
   return (
     <>
       <Navbar />
-      <section className={home.homesec}>
+      <section className={home.homesec}id="home">
         <div className={home.heromain}>
           <div className={home.light1}></div>
           <div className={home.light1}></div>
@@ -25,16 +25,16 @@ const HOME = () => {
         </div>
         <div className={home.herodev}><p className={home.front}>frontend developer</p><div className={home.image}><img alt="image1" src={heroVector} /></div></div>
       </section>
-      <section className={home.aboutsec}>
+      <section className={home.aboutsec} id="about">
         <About />
       </section>
-      <section className={home.projects}>
+      <section className={home.projects} id="projects">
         <Projects />
       </section>
-      <section className={home.skillsiknow}>
+      <section className={home.skillsiknow} id="skills">
         <Skills />
       </section>
-      <section className={home.contactsec}>
+      <section className={home.contactsec} id="contact">
         <div>
         <Contact/>
       </div>

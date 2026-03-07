@@ -214,11 +214,11 @@
     width: 275px;
     top:8%;
     left:2%;
-    animation: triangleanimation 4s infinite alternate-reverse;
+    animation: triangleanimation 4s ease-in-out infinite alternate-reverse;
 }
 @keyframes triangleanimation {
     0% {
-        transform: rotate(-25deg) scale(0.9);
+        transform: rotate(-25deg) scale(0.4);
     }
     100% {
         transform: rotate(25deg) scale(1.1);
@@ -226,7 +226,6 @@
 }
 .triangle img{
     background-size: cover;
-    /* position: absolute; */
     height: 100%;
     width: 100%;
     transform: rotate(-25deg);
@@ -245,7 +244,6 @@
     height: 75px;
     width: 75px;
     border-radius: 50%;
-    /* background-color: green; */
     top:82%;
     left: 17%;
 }
@@ -253,7 +251,6 @@
     height: 75px;
     width: 75px;
     border-radius: 50%;
-    /* background-color: green; */
     top:48%;
     left:85%;
 }

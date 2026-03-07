@@ -63,8 +63,12 @@ ul li {
     justify-content: space-between;
 }
 
-.links:hover {
+.links:hover a{
     background-color: RGB(39, 165, 239);
     color: white;
     cursor: pointer;
+}
+.links a{
+    color: black;
+    text-decoration: none;
 }
