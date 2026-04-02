@@ -3,11 +3,13 @@ import project from '../Style/Projects.module.css'
 import dark from '../assets/dark.png'
 import skill from '../assets/skillcave.png'
 import skillqr from '../assets/skillchallengeapp_qr.png'
+import slot from '../assets/slot.png'
+import blog from '../assets/blog.png'
 const Projects = () => {
     const [projectdone,setprojectdone]=useState([{"id":1,"title":"Notes Application","image":dark,"qrcode":skillqr,"link":"https://student-skill-dashboard.vercel.app/"},
       {"id":2,"title":"Notes Application","image":skill,"qrcode":skillqr,"link":"https://student-skill-dashboard.vercel.app/"},
-      {"id":3,"title":"Notes Application","image":dark,"qrcode":skillqr,"link":"https://student-skill-dashboard.vercel.app/"},
-      {"id":4,"title":"Notes Application","image":skill,"qrcode":skillqr,"link":"https://student-skill-dashboard.vercel.app/"}]);
+      {"id":3,"title":"slot booking Application","image":slot,"qrcode":skillqr,"link":"https://student-skill-dashboard.vercel.app/"},
+      {"id":4,"title":"blog website","image":blog,"qrcode":skillqr,"link":"https://student-skill-dashboard.vercel.app/"}]);
 
     const projectcompleted=projectdone.map((projects,index)=>(
       <div className={project.projectdisplay} key={index}>

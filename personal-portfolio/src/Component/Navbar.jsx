@@ -14,8 +14,6 @@ const Navbar = () => {
             <nav className={nav.navbar}>
                 <div className={nav.bar}>
                     <div className={nav.logo}><img src={logo} alt="logo" /></div>
-
-                    {/* Hamburger Button */}
                     <button
                         className={nav.hamburger}
                         onClick={toggleMenu}
@@ -26,8 +24,6 @@ const Navbar = () => {
                         <span className={`${nav.line} ${menuOpen ? nav.lineMiddle : ''}`}></span>
                         <span className={`${nav.line} ${menuOpen ? nav.lineBottom : ''}`}></span>
                     </button>
-
-                    {/* Nav Links */}
                     <div className={`${nav.navlink} ${menuOpen ? nav.navlinkOpen : ''}`}>
                         <ul>
                             <li className={nav.links}>
