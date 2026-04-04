@@ -772,6 +772,22 @@
         font-weight: 500;
         height: 26%;
         top:10%;
+        left: 5%;
+    }
+    .aboutmename{
+        height: 125px;
+    }
+    .aboutwhoiamwords {
+        width: 90%;
+        height: 95%;
+    }
+    .aboutpage{
+        width: 95%;
+    }
+    .whoiamabout{
+        height: 450px;
+        position: relative;
+        top: 5px;
     }
 
 

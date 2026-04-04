@@ -40,18 +40,18 @@ const Contact = () => {
           <div className={con.links}>
             <div className={con.mainlink}>
             <span className={con.profilelink}>
-                <span><a
+                <span><a className={con.anchor}
         href="https://github.com/KowshikP07"
         target="_blank"
       rel="noopener noreferrer"
     ><FaGithub className={con.icons}/>
     </a></span>
-              <span><a
+              <span><a className={con.anchor}
         href="https://www.linkedin.com/in/kowshikprakasam"
         target="_blank"
       rel="noopener noreferrer"
     ><FaLinkedin className={con.icons}/></a></span>
-              <span><a
+              <span><a className={con.anchor}
         href="https://leetcode.com/u/KOWSHIK_P/"
         target="_blank"
       rel="noopener noreferrer"
