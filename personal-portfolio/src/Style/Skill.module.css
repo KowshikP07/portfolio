@@ -7,7 +7,8 @@
     flex-direction: column;
     position: relative;
 }
-.background{
+
+.background {
     position: absolute;
     top: 0;
     left: 0;
@@ -15,16 +16,18 @@
     height: 100%;
     z-index: -1;
     overflow: hidden;
-    border-top: 5px dashed rgba(0,0,0,0.5);
+    border-top: 5px dashed rgba(0, 0, 0, 0.5);
 }
-.spiral{
+
+.spiral {
     position: absolute;
     right: -10%;
-    top:-11%;
+    top: -11%;
     filter: grayscale(100%);
     height: 50%;
     width: 30%;
 }
+
 .title {
     height: 20%;
     width: 100%;
@@ -32,7 +35,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    top:-25px;
+    top: -25px;
 }
 
 .title h1 {
@@ -104,6 +107,7 @@
     -webkit-text-stroke-color: white;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 5px;
+    letter-spacing: 2px;
 }
 
 .carousel {
@@ -168,7 +172,7 @@
 .slide {
     height: 450px;
     width: 100%;
-    flex:0 0 100%;
+    flex: 0 0 100%;
     position: relative;
     padding: 5px;
     border: 3px solid black;
@@ -178,7 +182,7 @@
     background-color: white;
 }
 
-.slide img{
+.slide img {
     position: absolute;
     background-size: cover;
     height: 100%;
@@ -187,17 +191,20 @@
     transition: all 0.6s;
     padding: 5px;
 }
+
 .carousel:hover img {
     filter: grayscale(0%);
     cursor: pointer;
 }
-.skillcontainer{
+
+.skillcontainer {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.skillcontainer img{
+
+.skillcontainer img {
     position: absolute;
     background-size: cover;
     height: 75%;
@@ -205,60 +212,104 @@
     filter: grayscale(100%);
     transition: all 0.5s;
 }
-.skillcontainer:hover img{
+
+.skillcontainer:hover img {
     filter: grayscale(0%);
 }
-.triangle{
+
+.triangle {
     height: 250px;
     position: relative;
     width: 275px;
-    top:8%;
-    left:2%;
+    top: 8%;
+    left: 2%;
     animation: triangleanimation 4s ease-in-out infinite alternate-reverse;
 }
+
 @keyframes triangleanimation {
     0% {
         transform: rotate(-25deg) scale(0.4);
     }
+
     100% {
         transform: rotate(25deg) scale(1.1);
     }
 }
-.triangle img{
+
+.triangle img {
     background-size: cover;
     height: 100%;
     width: 100%;
     transform: rotate(-25deg);
 }
-.cartoon{
+
+.cartoon {
     position: absolute;
     height: 75px;
     width: 75px;
     border-radius: 50%;
     background-color: black;
-    top:5%;
-    left:23%;
+    top: 5%;
+    left: 23%;
     border: 2px solid black;
 }
-.cartoon:nth-child(2){
+
+.cartoon:nth-child(2) {
     height: 75px;
     width: 75px;
     border-radius: 50%;
-    top:82%;
+    top: 82%;
     left: 17%;
 }
-.cartoon:nth-child(3){
+
+.cartoon:nth-child(3) {
     height: 75px;
     width: 75px;
     border-radius: 50%;
-    top:48%;
-    left:85%;
+    top: 48%;
+    left: 85%;
 }
-.cartoon img{
+
+.cartoon img {
     position: absolute;
-    border-radius:50% ;
+    border-radius: 50%;
     background-size: cover;
     padding: 2px;
     filter: grayscale(0%);
 }
 
+@media (max-width: 768px) {
+    .slide {
+        height: 350px;
+    }
+
+    .certiTitle p {
+        letter-spacing: 2px;
+        font-size: clamp(100px, 10vw, 150px);
+    }
+
+    .triangle {
+        height: 200px;
+        width: 220px;
+        top: -3%;
+        left: -8%;
+        animation: triangleanimation 4s ease-in-out infinite alternate-reverse;
+    }
+
+    @keyframes triangleanimation {
+        0% {
+            transform: rotate(-25deg) scale(0.4);
+        }
+
+        100% {
+            transform: rotate(25deg) scale(0.6);
+        }
+    }
+
+    .spiral {
+            right: -15%;
+            top: -9%;
+            height: 50%;
+            width: 40%;
+    }
+}
