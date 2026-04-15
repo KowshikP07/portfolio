@@ -46,26 +46,22 @@ const About = () => {
                 aria-expanded={menuOpen}
               >
                 <span
-                  className={`${home.line} ${
-                    menuOpen ? home.lineTop : ""
-                  }`}
+                  className={`${home.line} ${menuOpen ? home.lineTop : ""
+                    }`}
                 ></span>
                 <span
-                  className={`${home.line} ${
-                    menuOpen ? home.lineMiddle : ""
-                  }`}
+                  className={`${home.line} ${menuOpen ? home.lineMiddle : ""
+                    }`}
                 ></span>
                 <span
-                  className={`${home.line} ${
-                    menuOpen ? home.lineBottom : ""
-                  }`}
+                  className={`${home.line} ${menuOpen ? home.lineBottom : ""
+                    }`}
                 ></span>
               </button>
 
               <div
-                className={`${home.navlink} ${
-                  menuOpen ? home.navlinkOpen : ""
-                }`}
+                className={`${home.navlink} ${menuOpen ? home.navlinkOpen : ""
+                  }`}
               >
                 <ul className={home.aboutmenavlink}>
                   <li className={home.aboutnavli}>
@@ -145,7 +141,23 @@ const About = () => {
                     who i was
                   </h1>
                 </div>
-                <div className={home.whoiamabout}></div>
+                <div className={home.whoiamabout}>
+                  <p className={home.whoiwaspara}>There was nothing extraordinary about me I was just another engineering student with big dreams, still searching for direction. I didn’t have everything planned. I was figuring things out as I went, much like Harry Potter navigating the Triwizard Maze uncertain, but determined to move forward.
+
+                    Like most students, I followed the routine: classes, assignments, and exams. Days turned into months, and before I knew it, I was in my second year of engineering.
+
+                    Then came a moment that changed everything.
+
+                    During an interaction with a final-year senior, he casually asked if we knew frontend development. Without hesitation, we said yes. Then came the follow-up: “Can you center a container?”
+
+                    We couldn’t.
+
+                    It was a simple question, but it exposed a gap I hadn’t noticed before. In that moment, I realized how much I didn’t know and how much I had assumed I did. But instead of discouraging me, it lit a spark.
+
+                    That spark pulled me into the vast world of frontend development. The journey wasn’t easy there were moments of doubt, confusion, and comparison but I kept going.
+
+                    Because that one question didn’t just test me it redirected me.</p>
+                </div>
               </section>
             </Element>
 

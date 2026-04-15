@@ -53,7 +53,6 @@ export default function FAQ() {
                 {activeIndex === index ? "−" : "+"}
               </span>
             </button>
-
             {activeIndex === index && (
               <div className="faq-answer">
                 <p>{item.answer}</p>
